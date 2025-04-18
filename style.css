@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.circuit {
+    rotate: 90deg;
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    z-index: -1;
+}
+
+.name {
+    color: #ff0000;
+    font-family: "Home Video";
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    bottom: 30px
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color:#000000;
+}
+
+.intro {
+    color: #ff0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.blep {
+    display: block;
+    margin: auto;
+}
+
+nav {
+    height: 80px;
+    background: #ff0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+.logo {
+    font-family: "Home Video";
+    font-size: 50px;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+body {
+    background: #000000;
+    display: block;
+    margin: auto;
+}
+
+.davinciResolve {
+    width: 200px;
+    height: 200px;
+}
+
+.blender {
+    width: 200px;
+    height: 175px;
+}
+
+.krita {
+    width: 200px;
+    height: 200px;
+}
+
+.grid-text {
+    color: #ff0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: minmax(100px, auto);
+    gap: 20px;
+    grid-template-areas: 
+    "a c e"
+    "b d f";
+    justify-content: center;
+    align-items: center;
+}
+
+.item-a {
+    grid-area: a;
+}
+
+.item-b {
+    grid-area: b;
+}
+
+.item-c {
+    grid-area: c;
+}
+
+.item-d {
+    grid-area: d;
+}
+
+.item-e {
+    grid-area: e;
+}
+
+.item-f {
+    grid-area: f;
+}
+
+.programtext {
+    color: #ff0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.youtubelink {
+    color:#ff0000;
+}
+
+.other {
+    margin-top: 50px;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  width: 70px;
+  height: 70px;
+}
+
+.buttontext {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+button {
+  background-color: #ad0000;
+  border-color: #460000;
+  border-radius: 16px;
+  width: 150px;
+  height: 80px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #800000;
+  box-shadow: 5px 5px 3px rgb(24, 24, 24);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: minmax(100px, auto);
+  gap: 20px;
+  grid-template-areas: 
+  "one two three four";
+  justify-content: center;
+}
+
+.item1 {
+  grid-area: one;
+}
+
+.item2 {
+  grid-area: two;
+}
+
+.item3 {
+  grid-area: three;
+}
+
+.item4 {
+  grid-area: four;
+}
+
+/* Bouncing XENOS */  
+  .key {
+    font-size: 15vw;
+    display: inline-block;
+    letter-spacing: -1vw;
+    transition: transform 0.2s;
+    color: red;
+    font-family: "Home Video";
+  }
+  
+  
+  
+  @keyframes pressDown1 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown2 {
+    70%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown3 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown4 {
+    40%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    45% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown5 {
+    20%,
+    30%,
+    100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown6 {
+    60%,
+    70%,
+    100% {
+      transform: translateY(0);
+    }
+    65% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown7 {
+    10%,
+    20%,
+    100% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown8 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  
+  
+  
+  .key:nth-child(1) {
+    animation: pressDown1 2s infinite;
+  }
+  
+  .key:nth-child(2) {
+    animation: pressDown2 3s infinite;
+  }
+  
+  .key:nth-child(3) {
+    animation: pressDown3 4s infinite;
+  }
+  
+  .key:nth-child(4) {
+    animation: pressDown4 2.5s infinite;
+  }
+  
+  .key:nth-child(5) {
+    animation: pressDown5 2.5s infinite;
+  }
+  
+  .key:nth-child(6) {
+    animation: pressDown6 3.5s infinite;
+  }
+  
+  .key:nth-child(7) {
+    animation: pressDown7 2.2s infinite;
+  }
+  
+  .key:nth-child(8) {
+    animation: pressDown8 3.2s infinite;
+  }
+
+.keyboard {
+    display: flex;
+    justify-content: center;
+}
